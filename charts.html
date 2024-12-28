@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World Trends</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!--
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  -->
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__logo">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="World Trends"/>
+        </a>
+      </div>
+      <div class="nav__links">
+        <a class="nav__link nav__link--active" >Charts</a>
+        <a class="nav__link" href="index.html">News</a>
+      </div>
+
+    </div>
+  </nav>
+  <section class="charts">
+    <div class="container">
+      <h1>Charts</h1>
+      <div class="chart-legend"></div>
+      <div class="chart-months">
+          <div class="slider-container">
+            <button class="nav-button nav-button__prev hidden">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.99995 0.292893L0.292847 7L6.99995 13.7071C7.39048 14.0976 8.02364 14.0976 8.41417 13.7071C8.80469 13.3166 8.80469 12.6834 8.41417 12.2929L4.12127 8H16.7071C17.2593 8 17.7071 7.55228 17.7071 7C17.7071 6.44772 17.2593 6 16.7071 6L4.12127 6L8.41417 1.70711C8.80469 1.31658 8.80469 0.683417 8.41417 0.292893C8.02364 -0.0976315 7.39048 -0.0976315 6.99995 0.292893Z" fill="currentColor"/>
+              </svg>
+            </button>
+            <button class="nav-button nav-button__next hidden">
+              <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 13.7071L17.7072 7L11 0.292893C10.6095 -0.0976311 9.97636 -0.0976311 9.58583 0.292893C9.19531 0.683417 9.19531 1.31658 9.58583 1.70711L13.8787 6L1.29294 6C0.740654 6 0.292938 6.44772 0.292938 7C0.292938 7.55228 0.740654 8 1.29294 8L13.8787 8L9.58583 12.2929C9.19531 12.6834 9.19531 13.3166 9.58583 13.7071C9.97636 14.0976 10.6095 14.0976 11 13.7071Z" fill="currentColor"/>
+              </svg>
+            </button>
+            <div class="slider-wrapper"></div>
+        </div>
+      </div>
+      <div style="height:400px">
+        <canvas id="chart"></canvas>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <script src="js/chart.js"></script>
+  <script src="js/chartDataGenerator.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
